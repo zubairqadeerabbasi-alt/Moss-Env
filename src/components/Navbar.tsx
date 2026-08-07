@@ -43,7 +43,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRequestModal, onOpenAuthMo
         <div className="flex items-center justify-between">
           {/* Brand Logo */}
           <a href="#home" className="flex items-center group cursor-pointer focus:outline-none">
-            <div className="bg-white px-3 py-1.5 rounded-xl shadow-sm border border-slate-200/60 flex items-center justify-center transition-all duration-200 group-hover:scale-[1.02]">
+            <div className="flex items-center justify-center transition-all duration-200 group-hover:scale-[1.02]">
               <img
                 src={logo}
                 alt="MOSS Environmental Services & Transport"
