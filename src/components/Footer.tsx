@@ -1,5 +1,6 @@
 import React from 'react';
 import { Leaf, Phone, Mail, MapPin, ShieldCheck, ArrowUp, Heart } from 'lucide-react';
+import logo from '../assets/images/logo.png';
 
 interface FooterProps {
   onOpenRequestModal: () => void;
@@ -49,20 +50,13 @@ export const Footer: React.FC<FooterProps> = ({ onOpenRequestModal, onOpenAuthMo
           
           {/* Col 1: Brand Info */}
           <div className="lg:col-span-2 flex flex-col items-start">
-            <a href="#home" className="flex items-center gap-3 group">
-              <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-emerald-600 to-teal-700 flex items-center justify-center text-white shadow-md">
-                <Leaf className="h-5 w-5 fill-current" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-extrabold text-white tracking-tight flex items-center gap-1.5">
-                  MOSS
-                  <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-950 text-emerald-300 border border-emerald-800">
-                    Services
-                  </span>
-                </span>
-                <span className="text-[10px] font-medium tracking-wider text-emerald-400 uppercase">
-                  Abu Dhabi & UAE
-                </span>
+            <a href="#home" className="flex items-center group cursor-pointer focus:outline-none">
+              <div className="bg-white px-3 py-1.5 rounded-xl shadow-sm border border-slate-200/60 flex items-center justify-center transition-all duration-200 group-hover:scale-[1.02]">
+                <img
+                  src={logo}
+                  alt="MOSS Environmental Services & Transport"
+                  className="h-10 md:h-12 w-auto object-contain"
+                />
               </div>
             </a>
 

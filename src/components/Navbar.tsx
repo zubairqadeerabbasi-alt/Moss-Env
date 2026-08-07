@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Leaf, Menu, X, Phone, ArrowRight, ShieldCheck, ChevronRight } from 'lucide-react';
+import logo from '../assets/images/logo.png';
 
 interface NavbarProps {
   onOpenRequestModal: (serviceId?: string) => void;
@@ -41,24 +42,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRequestModal, onOpenAuthMo
       <div className="max-w-[1600px] mx-auto px-6 lg:px-12 mt-1">
         <div className="flex items-center justify-between">
           {/* Brand Logo */}
-          <a href="#home" className="flex items-center gap-3 group cursor-pointer focus:outline-none">
-            <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-emerald-600 via-teal-600 to-green-700 flex items-center justify-center text-white shadow-md shadow-emerald-600/20 group-hover:scale-105 transition-transform duration-200">
-              <Leaf className="h-5 w-5 fill-current" />
-            </div>
-            <div className="flex flex-col">
-              <span className={`text-xl font-extrabold tracking-tight flex items-center gap-1 ${
-                scrolled ? 'text-slate-900 dark:text-white' : 'text-white'
-              }`}>
-                MOSS
-                <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800">
-                  Services
-                </span>
-              </span>
-              <span className={`text-[10px] font-medium tracking-wider uppercase ${
-                scrolled ? 'text-slate-500 dark:text-slate-400' : 'text-emerald-200'
-              }`}>
-                Environmental Solutions
-              </span>
+          <a href="#home" className="flex items-center group cursor-pointer focus:outline-none">
+            <div className="bg-white px-3 py-1.5 rounded-xl shadow-sm border border-slate-200/60 flex items-center justify-center transition-all duration-200 group-hover:scale-[1.02]">
+              <img
+                src={logo}
+                alt="MOSS Environmental Services & Transport"
+                className="h-10 md:h-12 w-auto object-contain"
+              />
             </div>
           </a>
 
