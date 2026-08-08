@@ -3,7 +3,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { ServicesSection } from './components/ServicesSection';
 import { EquipmentsSection } from './components/EquipmentsSection';
-import { TestimonialsSection } from './components/TestimonialsSection';
+import { CertificationsSection } from './components/CertificationsSection';
 import { FAQSection } from './components/FAQSection';
 import { CTASection } from './components/CTASection';
 import { Footer } from './components/Footer';
@@ -63,8 +63,8 @@ export default function App() {
         onOpenRequestModal={() => handleOpenRequestModal()}
       />
 
-      {/* Testimonials */}
-      <TestimonialsSection />
+      {/* Certifications and Registrations */}
+      <CertificationsSection />
 
       {/* FAQ Accordion */}
       <FAQSection
