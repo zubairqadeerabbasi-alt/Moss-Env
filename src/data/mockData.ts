@@ -10,6 +10,13 @@ import wasteSegregationImg from '../assets/images/waste_segregation.png';
 import hazardousWasteImg from '../assets/images/hazardous_waste.png';
 import environmentalManagementImg from '../assets/images/environmental_management.png';
 
+import skipLoaderImg from '../assets/images/skip_loader.png';
+import rcvTruckImg from '../assets/images/rcv_truck.png';
+import hookLoaderImg from '../assets/images/hook_loader.png';
+import roroContainersImg from '../assets/images/roro_containers.png';
+import skipContainersImg from '../assets/images/skip_containers.png';
+import wheelieBinsImg from '../assets/images/wheelie_bins.png';
+
 export const SERVICES: EnvironmentalService[] = [
   {
     id: 'waste-collection',
@@ -394,57 +401,57 @@ export const SUSTAINABILITY_COMMITMENTS = [
 
 export const EQUIPMENT_ITEMS: EquipmentItem[] = [
   {
-    id: 'mobile-air-lab',
-    name: 'Mobile Air Quality Laboratory (MAQL-3)',
-    category: 'Air Analysis',
-    description: 'Truck-mounted certified laboratory equipped with real-time analyzers for VOCs, PM2.5/PM10, ozone, and NOx emissions.',
-    image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80',
-    specs: ['EPA-Certified Gas Analyzers', 'Meteorological Station Integration', 'LTE Real-time Data Telemetry', 'Self-powered Solar / Battery Bank'],
-    status: 'Ready for Dispatch'
-  },
-  {
-    id: 'eco-survey-drone',
-    name: 'Ecosystem Restoration Drone (ERD-V5)',
-    category: 'Ecology & Drone Survey',
-    description: 'Advanced octocopter optimized for coastal mangrove seed dispersion, high-resolution LiDAR topography mapping, and vegetation health tracking.',
-    image: 'https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&w=600&q=80',
-    specs: ['LiDAR & Multispectral Sensors', 'Precision Payload Release Hopper', 'RTK Centimeter-level Positioning', '45 Min Flight Time with Full Load'],
+    id: 'skip-loader',
+    name: 'Skip Loader',
+    category: 'Transport',
+    description: 'Fast placement and exchange of skip containers across active sites.',
+    image: skipLoaderImg,
+    specs: ['Hydraulic stabilization arms', 'Fits standard 2.0m to 4.0m skips', 'Robust chassis for industrial yards', 'High lifting capacity up to 10 Tons'],
     status: 'Available'
   },
   {
-    id: 'bio-remediation-tank',
-    name: 'Modular Bio-Remediation Unit (MBRU-100)',
-    category: 'Soil & Water Cleanup',
-    description: 'Portable bio-remediation tank designed for rapid processing of oil/hydrocarbon contaminated soils and marine industrial effluents.',
-    image: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=600&q=80',
-    specs: ['High-throughput Aeration System', 'Automated Bio-slurry Heat Exchangers', 'Microbial Inoculation Ports', 'EAD-compliant Outlet Filters'],
-    status: 'In Use'
-  },
-  {
-    id: 'iot-water-buoy',
-    name: 'Multi-Sensor Oceanographic Monitoring Buoy',
-    category: 'Marine Auditing',
-    description: 'Solar-powered marine monitoring system deployed in coastal lagoons and industrial ports to track water parameters.',
-    image: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80',
-    specs: ['Continuous pH & Turbidity Sensors', 'Heavy Metal Ion Indicators', 'Satellite / cellular communications link', 'Antifouling copper mesh housing'],
-    status: 'In Use'
-  },
-  {
-    id: 'hazmat-spill-trailer',
-    name: 'Rapid Spill Containment & Recovery Trailer',
-    category: 'HAZMAT',
-    description: 'Deployable trailer containing emergency booms, industrial skimmers, neutralizing agents, and chemical vacuum pumps.',
-    image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80',
-    specs: ['300m Inflatable Oil Booms', 'Pneumatic Acid/Alkali Safe Pumps', 'Personal Hazmat Protection Kits', 'Absorbent socks & dry-treatment agents'],
+    id: 'rcv-truck',
+    name: 'RCV Truck',
+    category: 'Transport',
+    description: 'Rear-loading compaction units for high-frequency municipal collection.',
+    image: rcvTruckImg,
+    specs: ['High-ratio waste compaction mechanism', 'Rear lifter for standard wheelie bins', 'Hermetic seals to prevent leachate leakage', 'Low-emission engine compliant with UAE cities'],
     status: 'Ready for Dispatch'
   },
   {
-    id: 'smart-waste-sorter',
-    name: 'Automated Solid Waste Sorter (ASWS-Lite)',
-    category: 'Waste Management',
-    description: 'AI-assisted optical sorter to automate segregation of cardboard, plastics, and metals from commercial waste streams.',
-    image: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=600&q=80',
-    specs: ['Near-Infrared (NIR) Optical Sensor', 'High-speed air-jet reject systems', 'Integrates with Tadweer smart bins', 'Up to 5 Tons/Hour segregation capacity'],
+    id: 'hook-loader',
+    name: 'Hook Loader',
+    category: 'Transport',
+    description: 'Heavy-duty handling of roll-on roll-off containers.',
+    image: hookLoaderImg,
+    specs: ['Telescopic sliding hook arm', 'Handles container lengths up to 7 meters', 'Reinforced locking hooks for road safety', 'Maximum lifting capacity of 20+ Tons'],
+    status: 'In Use'
+  },
+  {
+    id: 'roro-containers',
+    name: 'Roll-on Roll-off Containers',
+    category: 'Containers',
+    description: 'High-volume containers for construction and industrial waste.',
+    image: roroContainersImg,
+    specs: ['Reinforced steel side rails & floor', 'Double rear doors with safety locks', 'Available volumes: 20m³ to 40m³', 'Ideal for scrap, wood, and concrete waste'],
+    status: 'In Use'
+  },
+  {
+    id: 'skip-containers',
+    name: 'Skip Containers',
+    category: 'Containers',
+    description: 'Multiple sizes for mixed, recyclable and inert waste streams.',
+    image: skipContainersImg,
+    specs: ['Heavy-duty open top design', 'Stackable for space-efficient storage', 'Available sizes: 4.0m³, 7.0m³, 10.0m³', 'Corrosion-resistant marine coating'],
+    status: 'Available'
+  },
+  {
+    id: 'wheelie-bins',
+    name: 'Wheelie Bins',
+    category: 'Containers',
+    description: 'Colour-coded bins for segregated commercial and event waste.',
+    image: wheelieBinsImg,
+    specs: ['UV-resistant high density polyethylene (HDPE)', 'Sturdy rubber wheels for easy movement', 'Sizes: 120L, 240L, 360L, 1100L', 'Available in green, blue, yellow, and black'],
     status: 'Available'
   }
 ];
