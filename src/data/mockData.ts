@@ -1,4 +1,4 @@
-import { EnvironmentalService, ProjectCaseStudy, ImpactMetric, WhyChooseItem, Testimonial, FAQItem } from '../types';
+import { EnvironmentalService, ProjectCaseStudy, ImpactMetric, WhyChooseItem, Testimonial, FAQItem, EquipmentItem } from '../types';
 
 export const SERVICES: EnvironmentalService[] = [
   {
@@ -339,4 +339,62 @@ export const SUSTAINABILITY_COMMITMENTS = [
     icon: 'ShieldCheck'
   }
 ];
+
+export const EQUIPMENT_ITEMS: EquipmentItem[] = [
+  {
+    id: 'mobile-air-lab',
+    name: 'Mobile Air Quality Laboratory (MAQL-3)',
+    category: 'Air Analysis',
+    description: 'Truck-mounted certified laboratory equipped with real-time analyzers for VOCs, PM2.5/PM10, ozone, and NOx emissions.',
+    image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80',
+    specs: ['EPA-Certified Gas Analyzers', 'Meteorological Station Integration', 'LTE Real-time Data Telemetry', 'Self-powered Solar / Battery Bank'],
+    status: 'Ready for Dispatch'
+  },
+  {
+    id: 'eco-survey-drone',
+    name: 'Ecosystem Restoration Drone (ERD-V5)',
+    category: 'Ecology & Drone Survey',
+    description: 'Advanced octocopter optimized for coastal mangrove seed dispersion, high-resolution LiDAR topography mapping, and vegetation health tracking.',
+    image: 'https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&w=600&q=80',
+    specs: ['LiDAR & Multispectral Sensors', 'Precision Payload Release Hopper', 'RTK Centimeter-level Positioning', '45 Min Flight Time with Full Load'],
+    status: 'Available'
+  },
+  {
+    id: 'bio-remediation-tank',
+    name: 'Modular Bio-Remediation Unit (MBRU-100)',
+    category: 'Soil & Water Cleanup',
+    description: 'Portable bio-remediation tank designed for rapid processing of oil/hydrocarbon contaminated soils and marine industrial effluents.',
+    image: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=600&q=80',
+    specs: ['High-throughput Aeration System', 'Automated Bio-slurry Heat Exchangers', 'Microbial Inoculation Ports', 'EAD-compliant Outlet Filters'],
+    status: 'In Use'
+  },
+  {
+    id: 'iot-water-buoy',
+    name: 'Multi-Sensor Oceanographic Monitoring Buoy',
+    category: 'Marine Auditing',
+    description: 'Solar-powered marine monitoring system deployed in coastal lagoons and industrial ports to track water parameters.',
+    image: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80',
+    specs: ['Continuous pH & Turbidity Sensors', 'Heavy Metal Ion Indicators', 'Satellite / cellular communications link', 'Antifouling copper mesh housing'],
+    status: 'In Use'
+  },
+  {
+    id: 'hazmat-spill-trailer',
+    name: 'Rapid Spill Containment & Recovery Trailer',
+    category: 'HAZMAT',
+    description: 'Deployable trailer containing emergency booms, industrial skimmers, neutralizing agents, and chemical vacuum pumps.',
+    image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80',
+    specs: ['300m Inflatable Oil Booms', 'Pneumatic Acid/Alkali Safe Pumps', 'Personal Hazmat Protection Kits', 'Absorbent socks & dry-treatment agents'],
+    status: 'Ready for Dispatch'
+  },
+  {
+    id: 'smart-waste-sorter',
+    name: 'Automated Solid Waste Sorter (ASWS-Lite)',
+    category: 'Waste Management',
+    description: 'AI-assisted optical sorter to automate segregation of cardboard, plastics, and metals from commercial waste streams.',
+    image: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=600&q=80',
+    specs: ['Near-Infrared (NIR) Optical Sensor', 'High-speed air-jet reject systems', 'Integrates with Tadweer smart bins', 'Up to 5 Tons/Hour segregation capacity'],
+    status: 'Available'
+  }
+];
+
 

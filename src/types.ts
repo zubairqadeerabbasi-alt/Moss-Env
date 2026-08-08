@@ -72,3 +72,14 @@ export interface ServiceRequest {
   notes: string;
   preferredDate?: string;
 }
+
+export interface EquipmentItem {
+  id: string;
+  name: string;
+  category: string;
+  description: string;
+  image: string;
+  specs: string[];
+  status: 'Available' | 'In Use' | 'Ready for Dispatch';
+}
+

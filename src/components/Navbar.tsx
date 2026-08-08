@@ -23,8 +23,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRequestModal, onOpenAuthMo
   const navLinks = [
     { label: 'Home', href: '#home' },
     { label: 'Services', href: '#services' },
-    { label: 'Why Choose MOSS', href: '#why-us' },
-    { label: 'Projects', href: '#projects' },
+    { label: 'Equipments', href: '#equipments' },
     { label: 'FAQ', href: '#faq' },
     { label: 'Contact', href: '#contact' },
   ];

@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { ServicesSection } from './components/ServicesSection';
-import { WhyChooseUs } from './components/WhyChooseUs';
-import { ProjectsSection } from './components/ProjectsSection';
+import { EquipmentsSection } from './components/EquipmentsSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { FAQSection } from './components/FAQSection';
 import { CTASection } from './components/CTASection';
@@ -59,14 +58,8 @@ export default function App() {
         onRequestQuote={(serviceId) => handleOpenRequestModal(serviceId)}
       />
 
-      {/* Why Choose MOSS Section */}
-      <WhyChooseUs
-        onOpenRequestModal={() => handleOpenRequestModal()}
-      />
-
-      {/* Featured Projects & Case Studies */}
-      <ProjectsSection
-        onSelectProject={(project) => setSelectedProjectModal(project)}
+      {/* Equipments Section */}
+      <EquipmentsSection
         onOpenRequestModal={() => handleOpenRequestModal()}
       />
 
