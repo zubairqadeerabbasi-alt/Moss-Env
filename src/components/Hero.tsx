@@ -12,16 +12,16 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRequestModal, onOpenDemoModal 
   return (
     <section id="home" className="relative min-h-[85vh] flex items-center pt-28 pb-16 overflow-hidden font-sans">
       {/* Background Image Layer */}
-      <div className="absolute inset-0 z-0 bg-slate-950">
+      <div className="absolute inset-0 z-0 bg-white">
         <img
           src={truckImage}
           alt="MOSS Eco-Friendly Garbage Truck"
           className="absolute inset-0 w-full h-full object-cover object-right lg:object-[80%_center]"
         />
-        {/* Gradient overlays to blend the image into the dark background on the left */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/95 lg:via-slate-950/80 to-transparent z-10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/40 z-10" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(16,185,129,0.15),transparent_50%)] z-10" />
+        {/* Gradient overlays to blend the image into the light background on the left */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 lg:via-white/80 to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white/40 z-10" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(16,185,129,0.1),transparent_50%)] z-10" />
       </div>
 
       <div className="relative z-20 w-full max-w-[1600px] mx-auto px-6 lg:px-12 text-center sm:text-left">
@@ -32,10 +32,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRequestModal, onOpenDemoModal 
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-semibold mb-6 backdrop-blur-md"
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 text-xs font-semibold mb-6 backdrop-blur-md"
           >
-            <Leaf className="h-3.5 w-3.5 text-emerald-400 fill-current" />
-            <span className="text-emerald-200 font-semibold">Professional Environmental Solutions</span>
+            <Leaf className="h-3.5 w-3.5 text-emerald-600 fill-current" />
+            <span className="text-emerald-800 font-semibold">Professional Environmental Solutions</span>
           </motion.div>
 
           {/* Headline */}
@@ -43,10 +43,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRequestModal, onOpenDemoModal 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15] max-w-3xl"
+            className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15] max-w-3xl"
           >
             Building a <br className="hidden sm:inline" />
-            Clean & <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-green-400 bg-clip-text text-transparent">Sustainable Future</span>
+            Clean & <span className="bg-gradient-to-r from-emerald-600 via-teal-500 to-green-600 bg-clip-text text-transparent">Sustainable Future</span>
           </motion.h1>
 
           {/* Subdescription */}
@@ -54,7 +54,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRequestModal, onOpenDemoModal 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-6 text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed font-normal"
+            className="mt-6 text-base sm:text-lg text-slate-700 max-w-2xl leading-relaxed font-normal"
           >
             MOSS Environment Services delivers end-to-end environmental solutions—from comprehensive waste auditing and coastal mangrove restoration to water purity testing and 24/7 HAZMAT remediation.
           </motion.p>
@@ -64,22 +64,22 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRequestModal, onOpenDemoModal 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 w-full max-w-xl text-xs sm:text-sm text-slate-200 font-medium text-left"
+            className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 w-full max-w-xl text-xs sm:text-sm text-slate-800 font-medium text-left"
           >
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-emerald-400 flex-shrink-0" />
+              <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0" />
               <span>24/7 Emergency Response & Dispatch</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-emerald-400 flex-shrink-0" />
+              <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0" />
               <span>Certified Environmental Manifest Auditing</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-emerald-400 flex-shrink-0" />
+              <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0" />
               <span>Zero-Landfill Circular Economy Solutions</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="h-4 w-4 text-emerald-400 flex-shrink-0" />
+              <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0" />
               <span>Coastal Mangrove Habitat Reforestation</span>
             </div>
           </motion.div>
@@ -93,7 +93,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRequestModal, onOpenDemoModal 
           >
             <button
               onClick={onOpenRequestModal}
-              className="w-full sm:w-auto px-7 py-4 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-emerald-600 via-teal-600 to-green-600 hover:from-emerald-500 hover:to-green-500 shadow-xl shadow-emerald-700/30 hover:shadow-emerald-600/50 transition-all duration-200 flex items-center justify-center gap-2 group cursor-pointer active:scale-98"
+              className="w-full sm:w-auto px-7 py-4 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-emerald-600 via-teal-600 to-green-600 hover:from-emerald-700 hover:to-green-700 shadow-xl shadow-emerald-700/20 hover:shadow-emerald-600/40 transition-all duration-200 flex items-center justify-center gap-2 group cursor-pointer active:scale-98"
             >
               <span>Request a Service</span>
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -101,9 +101,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRequestModal, onOpenDemoModal 
 
             <button
               onClick={onOpenDemoModal}
-              className="w-full sm:w-auto px-6 py-4 rounded-xl font-semibold text-sm text-slate-200 bg-slate-900/70 hover:bg-slate-800/90 border border-slate-700/80 backdrop-blur-md transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer hover:text-white"
+              className="w-full sm:w-auto px-6 py-4 rounded-xl font-semibold text-sm text-slate-700 bg-white/70 hover:bg-slate-50/90 border border-slate-300/80 backdrop-blur-md transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer hover:text-slate-900 shadow-sm"
             >
-              <div className="h-6 w-6 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-400">
+              <div className="h-6 w-6 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-600">
                 <Play className="h-3 w-3 fill-current ml-0.5" />
               </div>
               <span>Watch Video Overview</span>
@@ -115,16 +115,16 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRequestModal, onOpenDemoModal 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="mt-8 pt-6 border-t border-slate-800/80 flex flex-wrap items-center justify-center sm:justify-start gap-4 text-xs text-slate-400 w-full"
+            className="mt-8 pt-6 border-t border-slate-200/80 flex flex-wrap items-center justify-center sm:justify-start gap-4 text-xs text-slate-600 w-full"
           >
-            <span className="flex items-center gap-2 font-semibold text-emerald-400">
+            <span className="flex items-center gap-2 font-semibold text-emerald-600">
               <Phone className="h-3.5 w-3.5 animate-bounce" /> Emergency Support:
             </span>
-            <a href="tel:8006677" className="text-slate-200 hover:text-white font-bold underline underline-offset-4">
+            <a href="tel:8006677" className="text-slate-800 hover:text-slate-900 font-bold underline underline-offset-4">
               800-MOSS-UAE (+971 2 444 8900)
             </a>
-            <span className="hidden sm:inline text-slate-600">|</span>
-            <span className="text-slate-300">Fast 2-hour dispatch for industrial sites</span>
+            <span className="hidden sm:inline text-slate-400">|</span>
+            <span className="text-slate-600">Fast 2-hour dispatch for industrial sites</span>
           </motion.div>
 
         </div>
