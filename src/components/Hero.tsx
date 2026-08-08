@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, Play, Leaf, CheckCircle2, Phone } from 'lucide-react';
-import truckImage from '../assets/images/moss_garbage_truck_1786037082456.jpg';
+import truckImage from '../assets/images/moss_garbage_truck.png';
 
 interface HeroProps {
   onOpenRequestModal: () => void;
