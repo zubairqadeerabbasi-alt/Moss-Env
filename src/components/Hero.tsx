@@ -18,10 +18,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRequestModal, onOpenDemoModal 
           alt="MOSS Eco-Friendly Garbage Truck"
           className="absolute inset-0 w-full h-full object-cover object-right lg:object-[80%_center]"
         />
-        {/* Gradient overlays to blend the image into the light background on the left */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 lg:via-white/80 to-transparent z-10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white/40 z-10" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(16,185,129,0.1),transparent_50%)] z-10" />
+        {/* Gradient overlays to blend the image into the light background on the left, keeping them subtle so the image is clearly visible */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/50 to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-white/10 z-10" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(16,185,129,0.05),transparent_50%)] z-10" />
       </div>
 
       <div className="relative z-20 w-full max-w-[1600px] mx-auto px-6 lg:px-12 text-center sm:text-left">
