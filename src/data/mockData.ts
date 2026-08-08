@@ -1,107 +1,159 @@
 import { EnvironmentalService, ProjectCaseStudy, ImpactMetric, WhyChooseItem, Testimonial, FAQItem, EquipmentItem } from '../types';
 
+import wasteCollectionImg from '../assets/images/waste_collection.png';
+import wasteTransportationImg from '../assets/images/waste_transportation.png';
+import industrialCleaningImg from '../assets/images/industrial_cleaning.png';
+import buildingCleaningImg from '../assets/images/building_cleaning.png';
+import specializedCleaningImg from '../assets/images/specialized_cleaning.png';
+import wasteDisposalImg from '../assets/images/waste_disposal.png';
+import wasteSegregationImg from '../assets/images/waste_segregation.png';
+import hazardousWasteImg from '../assets/images/hazardous_waste.png';
+import environmentalManagementImg from '../assets/images/environmental_management.png';
+
 export const SERVICES: EnvironmentalService[] = [
   {
-    id: 'waste-recycling',
-    title: 'Waste Management & Circular Economy',
+    id: 'waste-collection',
+    title: 'Waste Collection',
     category: 'Waste & Recycling',
-    description: 'Commercial & industrial waste auditing, zero-landfill recycling programs, and certified organic composting.',
-    fullDetails: 'Our waste management solutions analyze your waste streams to achieve maximum material recovery. We implement zero-waste to landfill strategies, automated recycling sorting, and hazardous byproduct disposal adhering strictly to environmental agency guidelines.',
+    description: 'Scheduled and on-demand collection of municipal, commercial and industrial waste streams.',
+    fullDetails: 'We provide comprehensive waste collection services using our modern, specialized fleet. Our solutions cover municipal solid waste, commercial waste, and industrial streams, scheduled to fit your operational timeline.',
     iconName: 'Recycle',
-    image: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1000&q=80',
+    image: wasteCollectionImg,
     benefits: [
-      'Up to 88% waste diversion rate from landfills',
-      'Full regulatory compliance & manifest tracking',
-      'On-site waste sorting & automated smart bin collection',
-      'Custom sustainability reporting for Net-Zero & ESG goals'
+      'Flexible scheduling (24/7 service available)',
+      'Compliant with Tadweer regulations',
+      'Dedicated bins and containers provided'
     ],
-    badge: 'Zero Landfill',
-    turnaroundTime: '24-48 hr deployment'
+    badge: 'On-Demand',
+    turnaroundTime: '24 hr dispatch'
   },
   {
-    id: 'ecological-restoration',
-    title: 'Mangrove & Ecosystem Restoration',
-    category: 'Ecological Restoration',
-    description: 'Restoring coastal mangroves, flora bio-remediation, wetland rehabilitation, and large-scale biodiverse tree planting.',
-    fullDetails: 'MOSS specializes in repairing fragile coastal and wetland landscapes through native grey mangrove reintroduction, sand dune stabilization, and tidal marsh hydrological restoration. We partner with conservationists and topographers to build self-sustaining ecosystems.',
-    iconName: 'Trees',
-    image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1000&q=80',
+    id: 'waste-transportation',
+    title: 'Waste Transportation',
+    category: 'Waste & Recycling',
+    description: 'Licensed transport of waste from source to approved receiving and treatment facilities.',
+    fullDetails: 'Licensed transport of waste utilizing heavy-duty trucks, hooks, and loaders. We ensure all waste is safely transported from source locations to authorized receiving, recycling, or treatment facilities with complete tracking manifests.',
+    iconName: 'Recycle',
+    image: wasteTransportationImg,
     benefits: [
-      'Native mangrove & flora species re-establishment',
-      'Coastal erosion prevention & micro-climate restoration',
-      'Long-term biodiversity monitoring via drone survey',
-      'Verified carbon offset certification & credits'
+      'Certified GPS-tracked vehicle fleet',
+      'Safe transfer of hazardous & non-hazardous loads',
+      'Electronic manifest logging (Tadweer / EAD)'
     ],
-    badge: 'Eco Restoration',
-    turnaroundTime: 'Custom Project Plan'
+    badge: 'Licensed',
+    turnaroundTime: 'Scheduled & Emergency'
   },
   {
-    id: 'air-water-auditing',
-    title: 'Air & Water Quality Auditing',
-    category: 'Auditing & Testing',
-    description: 'Laboratory analysis, real-time IoT sensor deployment, particulate monitoring, and water purity assessment.',
-    fullDetails: 'Utilizing certified field equipment and accredited laboratories, we deliver precise chemical, particulate, and biological assessments of air emissions and effluent discharge for industrial, marine, and municipal clients.',
-    iconName: 'Droplets',
-    image: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=1000&q=80',
-    benefits: [
-      'Certified lab analysis (VOCs, heavy metals, salinity, turbidity)',
-      'Continuous 24/7 IoT sensor monitoring network',
-      'Immediate alert triggers for environmental threshold breaches',
-      'Official marine & air quality compliance reporting'
-    ],
-    badge: 'Lab Certified',
-    turnaroundTime: 'Same-day emergency response'
-  },
-  {
-    id: 'renewable-consulting',
-    title: 'Solar Energy & Energy Efficiency Consulting',
-    category: 'Renewable Energy',
-    description: 'Solar microgrid feasibility studies, energy storage integration, building rating auditing, and Net-Zero roadmaps.',
-    fullDetails: 'We guide municipalities, commercial towers, and educational campuses toward energy independence. From rooftop solar feasibility to battery storage grid integration, our engineering team optimizes your green transition.',
-    iconName: 'Sun',
-    image: 'https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1000&q=80',
-    benefits: [
-      '30-50% reduction in commercial electricity & cooling costs',
-      'Green Building Rating System optimization',
-      'Net-Zero carbon strategy & ROI forecasting',
-      'Microgrid & battery backup system engineering'
-    ],
-    badge: 'Green Energy',
-    turnaroundTime: '1-2 weeks study'
-  },
-  {
-    id: 'hazardous-remediation',
-    title: 'Hazardous Materials & Chemical Remediation',
-    category: 'Compliance & Advisory',
-    description: 'Safe removal of industrial contaminants, soil de-pollution, and emergency spill containment.',
-    fullDetails: 'MOSS deploys certified emergency response units to neutralize soil toxins, chemical leaks, and hydrocarbon spills while minimizing environmental fallout and restoring soil biome health.',
+    id: 'industrial-cleaning',
+    title: 'Industrial Cleaning',
+    category: 'Waste & Recycling',
+    description: 'High-performance cleaning for plants, warehouses, workshops and industrial yards.',
+    fullDetails: 'High-performance industrial cleaning services using state-of-the-art high-pressure washers, scrubbers, and specialized detergents. We clean manufacturing plants, warehouses, mechanical workshops, and industrial yards safely and thoroughly.',
     iconName: 'ShieldAlert',
-    image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80',
+    image: industrialCleaningImg,
     benefits: [
-      '24/7 Rapid hazmat emergency response',
-      'Bio-remediation & soil hydrocarbon de-contamination',
-      'HAZWOPER certified field technicians',
-      'Complete disposal manifest documentation'
+      'Removal of heavy oils, grease, and chemicals',
+      'Minimum disruption to ongoing operations',
+      'Highly trained operators and safety compliance'
     ],
-    badge: '24/7 HAZMAT',
-    turnaroundTime: '< 2 Hours Dispatch'
+    badge: 'Heavy Duty',
+    turnaroundTime: 'Custom Schedule'
   },
   {
-    id: 'environmental-compliance',
-    title: 'Environmental Impact & Compliance (EIA)',
+    id: 'building-cleaning',
+    title: 'Building Cleaning',
     category: 'Compliance & Advisory',
-    description: 'Environmental Impact Assessments (EIA), ESG disclosure reporting, permit acquisition, and ISO 14001 certification.',
-    fullDetails: 'Navigate environmental regulatory frameworks effortlessly. MOSS conducts Environmental Impact Assessments (EIA), Phase I & II environmental site assessments (ESA), and helps organizations secure environmental permits and ISO 14001 certification.',
+    description: 'Complete cleaning programmes for commercial, residential and government buildings.',
+    fullDetails: 'Professional, custom building cleaning and maintenance programmes. We offer comprehensive interior and exterior cleaning for commercial towers, residential complexes, and government facilities, adhering to the highest quality standards.',
     iconName: 'FileText',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80',
+    image: buildingCleaningImg,
     benefits: [
-      'Phase I & II Environmental Site Assessments (ESA)',
-      'Official environmental permit filing & documentation',
-      'ISO 14001 Environmental Management Systems setup',
-      'ESG data verification for investors & government audits'
+      'Tailored daily, weekly, or monthly schedules',
+      'Eco-friendly, certified cleaning materials',
+      'Facade, window, and deep interior cleaning'
     ],
-    badge: 'ISO 14001',
-    turnaroundTime: 'Fast-track available'
+    badge: 'Premium Care',
+    turnaroundTime: 'Recurring Contract'
+  },
+  {
+    id: 'specialized-cleaning',
+    title: 'Specialized Cleaning',
+    category: 'Compliance & Advisory',
+    description: 'Bespoke cleaning solutions for events, sensitive assets and complex sites.',
+    fullDetails: 'Custom cleaning solutions designed for events, sensitive corporate assets, high-security zones, and complex setups. We deploy specialized teams to clean, restore, and maintain spaces before, during, and after activities.',
+    iconName: 'Sparkles',
+    image: specializedCleaningImg,
+    benefits: [
+      'Pre-event prep and rapid post-event cleanup',
+      'Care for delicate structures & sensitive electronics',
+      'Highly secure, background-verified personnel'
+    ],
+    badge: 'Specialist',
+    turnaroundTime: 'On-Demand / Project'
+  },
+  {
+    id: 'waste-disposal',
+    title: 'Waste Disposal',
+    category: 'Waste & Recycling',
+    description: 'Disposal of collected waste exclusively at licensed, approved facilities.',
+    fullDetails: 'Eco-conscious waste disposal. We route collected waste streams to official, licensed, and approved disposal and recycling facilities, prioritizing material recovery, compost routing, and energy conversion over landfilling.',
+    iconName: 'Recycle',
+    image: wasteDisposalImg,
+    benefits: [
+      'Strict zero-landfill diversion alignment',
+      '100% compliant with municipal laws',
+      'Complete disposal certificates provided'
+    ],
+    badge: 'Eco-Friendly',
+    turnaroundTime: 'Certified'
+  },
+  {
+    id: 'waste-segregation',
+    title: 'Waste Segregation',
+    category: 'Waste & Recycling',
+    description: 'On-site segregation systems that increase recovery and reduce disposal cost.',
+    fullDetails: 'Providing systems and training for source-level waste segregation. We set up smart color-coded sorting systems to separate paper, plastic, metals, organics, and general waste, optimizing circular recovery rates.',
+    iconName: 'Recycle',
+    image: wasteSegregationImg,
+    benefits: [
+      'Reduction in municipal disposal fees',
+      'High circular material recovery rates',
+      'Staff environmental awareness training'
+    ],
+    badge: 'Tadweer Aligned',
+    turnaroundTime: 'Full Implementation'
+  },
+  {
+    id: 'hazardous-waste',
+    title: 'Hazardous Waste Handling',
+    category: 'Waste & Recycling',
+    description: 'Controlled handling of hazardous streams with strict safety procedures.',
+    fullDetails: 'Specialized and highly controlled storage, containment, transport, and disposal of hazardous waste streams (chemical, biological, and electronic). We adhere strictly to local EAD and international safety standards.',
+    iconName: 'ShieldAlert',
+    image: hazardousWasteImg,
+    benefits: [
+      'Hazmat-certified teams & safety vehicles',
+      'Specialized containment drum supply',
+      'Full liability protection & compliance tracking'
+    ],
+    badge: 'Strict Safety',
+    turnaroundTime: 'Immediate Response'
+  },
+  {
+    id: 'environmental-management',
+    title: 'Environmental Management',
+    category: 'Compliance & Advisory',
+    description: 'Integrated environmental management programmes for large clients and sites.',
+    fullDetails: 'Integrated environmental management advisory and execution. We design complete environmental protection frameworks, ISO 14001 setups, and compliance logs for large-scale operations, industrial hubs, and master developments.',
+    iconName: 'FileText',
+    image: environmentalManagementImg,
+    benefits: [
+      'Comprehensive auditing and monitoring logs',
+      'Dedicated compliance manager support',
+      'Direct coordination with local regulators'
+    ],
+    badge: 'Corporate',
+    turnaroundTime: 'Continuous Support'
   }
 ];
 

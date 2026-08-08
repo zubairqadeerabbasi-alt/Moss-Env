@@ -17,6 +17,7 @@ const getIconComponent = (iconName: string) => {
     case 'Sun': return Sun;
     case 'ShieldAlert': return ShieldAlert;
     case 'FileText': return FileText;
+    case 'Sparkles': return Sparkles;
     default: return Recycle;
   }
 };
@@ -27,9 +28,6 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
   const categories = [
     'All',
     'Waste & Recycling',
-    'Ecological Restoration',
-    'Auditing & Testing',
-    'Renewable Energy',
     'Compliance & Advisory'
   ];
 
