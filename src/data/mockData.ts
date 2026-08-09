@@ -1,6 +1,6 @@
 import { EnvironmentalService, ProjectCaseStudy, ImpactMetric, WhyChooseItem, Testimonial, FAQItem, EquipmentItem } from '../types';
 
-import wasteCollectionImg from '../assets/images/waste_collection.png';
+import wasteCollectionImg from '../assets/images/moss_garbage_truck.png';
 import wasteTransportationImg from '../assets/images/waste_transportation.png';
 import industrialCleaningImg from '../assets/images/industrial_cleaning.png';
 import buildingCleaningImg from '../assets/images/building_cleaning.png';
