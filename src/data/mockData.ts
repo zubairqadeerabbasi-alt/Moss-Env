@@ -1,14 +1,14 @@
 import { EnvironmentalService, ProjectCaseStudy, ImpactMetric, WhyChooseItem, Testimonial, FAQItem, EquipmentItem } from '../types';
 
 import wasteCollectionImg from '../assets/images/moss_garbage_truck.png';
-import wasteTransportationImg from '../assets/images/waste_transportation.png';
-import industrialCleaningImg from '../assets/images/industrial_cleaning.png';
-import buildingCleaningImg from '../assets/images/building_cleaning.png';
-import specializedCleaningImg from '../assets/images/specialized_cleaning.png';
-import wasteDisposalImg from '../assets/images/waste_disposal.png';
-import wasteSegregationImg from '../assets/images/waste_segregation.png';
-import hazardousWasteImg from '../assets/images/hazardous_waste.png';
-import environmentalManagementImg from '../assets/images/environmental_management.png';
+import wasteTransportationImg from '../assets/images/waste_transportation.webp';
+import industrialCleaningImg from '../assets/images/industrial_cleaning.webp';
+import buildingCleaningImg from '../assets/images/building_cleaning.webp';
+import specializedCleaningImg from '../assets/images/specialized_cleaning.webp';
+import wasteDisposalImg from '../assets/images/waste_disposal.webp';
+import wasteSegregationImg from '../assets/images/Waste_Segregation.webp';
+import hazardousWasteImg from '../assets/images/Hazardous_Waste_Handling.webp';
+import environmentalManagementImg from '../assets/images/Environmental_Management.webp';
 
 import skipLoaderImg from '../assets/images/skip_loader.png';
 import rcvTruckImg from '../assets/images/rcv_truck.png';
