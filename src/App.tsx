@@ -66,13 +66,13 @@ export default function App() {
       {/* Certifications and Registrations */}
       <CertificationsSection />
 
-      {/* FAQ Accordion */}
-      <FAQSection
+      {/* Strong Call To Action (Contact) Section */}
+      <CTASection
         onOpenRequestModal={() => handleOpenRequestModal()}
       />
 
-      {/* Strong Call To Action Section */}
-      <CTASection
+      {/* FAQ Accordion */}
+      <FAQSection
         onOpenRequestModal={() => handleOpenRequestModal()}
       />
 

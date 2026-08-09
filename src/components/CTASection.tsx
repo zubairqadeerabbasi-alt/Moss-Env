@@ -24,7 +24,11 @@ export const CTASection: React.FC<CTASectionProps> = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-slate-50 dark:bg-slate-900/40 relative font-sans overflow-hidden border-t border-slate-100 dark:border-slate-800">
+    <section id="contact" className="py-20 bg-slate-900 dark:bg-slate-950 relative font-sans overflow-hidden border-t border-slate-800">
+      {/* Background glow effects to match dark theme */}
+      <div className="absolute top-1/4 left-1/10 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-1/4 right-1/10 w-96 h-96 bg-teal-500/5 rounded-full blur-3xl pointer-events-none" />
+
       <div className="max-w-[1600px] mx-auto px-6 lg:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           
@@ -34,52 +38,52 @@ export const CTASection: React.FC<CTASectionProps> = () => {
             {/* 2x2 Grid of info cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Landline */}
-              <div className="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm flex flex-col gap-3">
-                <div className="h-10 w-10 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
+              <div className="p-6 rounded-2xl bg-slate-950/40 dark:bg-slate-950/40 border border-slate-800 shadow-lg flex flex-col gap-3">
+                <div className="h-10 w-10 rounded-xl bg-emerald-950/50 text-emerald-400 flex items-center justify-center border border-emerald-900/30">
                   <Phone className="h-5 w-5" />
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block">Landline</span>
-                  <a href="tel:+97128823595" className="text-base font-bold text-slate-800 dark:text-slate-200 hover:text-emerald-600 transition-colors mt-1 block">
+                  <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block font-sans">Landline</span>
+                  <a href="tel:+97128823595" className="text-base font-bold text-slate-100 hover:text-emerald-400 transition-colors mt-1 block">
                     +971 2 882 3595
                   </a>
                 </div>
               </div>
 
               {/* Email */}
-              <div className="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm flex flex-col gap-3">
-                <div className="h-10 w-10 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
+              <div className="p-6 rounded-2xl bg-slate-950/40 dark:bg-slate-950/40 border border-slate-800 shadow-lg flex flex-col gap-3">
+                <div className="h-10 w-10 rounded-xl bg-emerald-950/50 text-emerald-400 flex items-center justify-center border border-emerald-900/30">
                   <Mail className="h-5 w-5" />
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block">Email</span>
-                  <a href="mailto:info@mossenv.com" className="text-base font-bold text-slate-800 dark:text-slate-200 hover:text-emerald-600 transition-colors mt-1 block">
+                  <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block font-sans">Email</span>
+                  <a href="mailto:info@mossenv.com" className="text-base font-bold text-slate-100 hover:text-emerald-400 transition-colors mt-1 block">
                     info@mossenv.com
                   </a>
                 </div>
               </div>
 
               {/* Address */}
-              <div className="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm flex flex-col gap-3">
-                <div className="h-10 w-10 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
+              <div className="p-6 rounded-2xl bg-slate-950/40 dark:bg-slate-950/40 border border-slate-800 shadow-lg flex flex-col gap-3">
+                <div className="h-10 w-10 rounded-xl bg-emerald-950/50 text-emerald-400 flex items-center justify-center border border-emerald-900/30">
                   <MapPin className="h-5 w-5" />
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block">Address</span>
-                  <p className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-300 mt-1 leading-relaxed">
+                  <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block font-sans">Address</span>
+                  <p className="text-xs sm:text-sm font-semibold text-slate-300 mt-1 leading-relaxed">
                     Mussafah M-37, Street 3, Abu Dhabi, United Arab Emirates
                   </p>
                 </div>
               </div>
 
               {/* Business Hours */}
-              <div className="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm flex flex-col gap-3">
-                <div className="h-10 w-10 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
+              <div className="p-6 rounded-2xl bg-slate-950/40 dark:bg-slate-950/40 border border-slate-800 shadow-lg flex flex-col gap-3">
+                <div className="h-10 w-10 rounded-xl bg-emerald-950/50 text-emerald-400 flex items-center justify-center border border-emerald-900/30">
                   <Clock className="h-5 w-5" />
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest block">Business Hours</span>
-                  <p className="text-xs sm:text-sm font-semibold text-slate-700 dark:text-slate-300 mt-1 leading-relaxed">
+                  <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block font-sans">Business Hours</span>
+                  <p className="text-xs sm:text-sm font-semibold text-slate-300 mt-1 leading-relaxed">
                     Monday – Saturday · 8:00 AM – 6:00 PM
                   </p>
                 </div>
@@ -102,7 +106,7 @@ export const CTASection: React.FC<CTASectionProps> = () => {
             </div>
 
             {/* Interactive Map */}
-            <div className="w-full h-[280px] rounded-2xl overflow-hidden border border-slate-200/80 dark:border-slate-800 shadow-sm bg-white dark:bg-slate-900">
+            <div className="w-full h-[280px] rounded-2xl overflow-hidden border border-slate-800 shadow-lg bg-slate-950">
               <iframe
                 title="MOSS Office Location Map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3634.3411082534573!2d54.49479361500366!3d24.37812598428456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e41df2e6d628f%3A0xd68d57dc4b85c13e!2sM-37%2C%20Mussafah%20-%20Abu%20Dhabi!5e0!3m2!1sen!2sae!4v1628531933037!5m2!1sen!2sae"
@@ -118,14 +122,14 @@ export const CTASection: React.FC<CTASectionProps> = () => {
           </div>
 
           {/* Right Column: Quotation Form */}
-          <div className="lg:col-span-6 bg-white dark:bg-slate-900 rounded-3xl p-8 border border-slate-200/80 dark:border-slate-800 shadow-lg flex flex-col justify-center">
+          <div className="lg:col-span-6 bg-slate-950/40 dark:bg-slate-950/40 rounded-3xl p-8 border border-slate-800 shadow-xl flex flex-col justify-center">
             {!submitted ? (
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
-                  <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block mb-1">
+                  <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest block mb-1">
                     Live Quote
                   </span>
-                  <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+                  <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
                     Request a free quotation
                   </h3>
                 </div>
@@ -139,7 +143,7 @@ export const CTASection: React.FC<CTASectionProps> = () => {
                       placeholder="Full name *"
                       value={formData.fullName}
                       onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-850 text-slate-800 dark:text-slate-200 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none transition-colors placeholder-slate-500"
                     />
                   </div>
 
@@ -150,7 +154,7 @@ export const CTASection: React.FC<CTASectionProps> = () => {
                       placeholder="Company"
                       value={formData.company}
                       onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-850 text-slate-800 dark:text-slate-200 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none transition-colors placeholder-slate-500"
                     />
                   </div>
                 </div>
@@ -164,7 +168,7 @@ export const CTASection: React.FC<CTASectionProps> = () => {
                       placeholder="Phone *"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-850 text-slate-800 dark:text-slate-200 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none transition-colors placeholder-slate-500"
                     />
                   </div>
 
@@ -175,7 +179,7 @@ export const CTASection: React.FC<CTASectionProps> = () => {
                       placeholder="Email"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-850 text-slate-800 dark:text-slate-200 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none transition-colors placeholder-slate-500"
                     />
                   </div>
                 </div>
@@ -186,7 +190,7 @@ export const CTASection: React.FC<CTASectionProps> = () => {
                     <select
                       value={formData.clientType}
                       onChange={(e) => setFormData({ ...formData, clientType: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-850 text-slate-500 dark:text-slate-400 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-400 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none transition-colors"
                     >
                       <option value="">I am a...</option>
                       <option value="Commercial">Commercial Client</option>
@@ -201,7 +205,7 @@ export const CTASection: React.FC<CTASectionProps> = () => {
                     <select
                       value={formData.lookingFor}
                       onChange={(e) => setFormData({ ...formData, lookingFor: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-850 text-slate-500 dark:text-slate-400 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-400 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none transition-colors"
                     >
                       <option value="">Looking for...</option>
                       <option value="Waste Collection">Waste Collection</option>
@@ -224,7 +228,7 @@ export const CTASection: React.FC<CTASectionProps> = () => {
                     placeholder="Tell us about your site, volumes or schedule"
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-850 text-slate-800 dark:text-slate-200 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none transition-colors resize-none"
+                    className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 text-xs sm:text-sm focus:border-emerald-500 focus:outline-none transition-colors resize-none placeholder-slate-500"
                   />
                 </div>
 
@@ -238,12 +242,12 @@ export const CTASection: React.FC<CTASectionProps> = () => {
               </form>
             ) : (
               <div className="text-center py-12">
-                <div className="h-16 w-16 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mx-auto mb-4 border border-emerald-200 dark:border-emerald-800">
+                <div className="h-16 w-16 rounded-full bg-emerald-950/60 text-emerald-400 flex items-center justify-center mx-auto mb-4 border border-emerald-800">
                   <CheckCircle2 className="h-8 w-8" />
                 </div>
-                <h4 className="text-xl font-extrabold text-slate-900 dark:text-white">Request Submitted!</h4>
-                <p className="mt-3 text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed max-w-sm mx-auto">
-                  Thank you, <span className="font-bold text-slate-800 dark:text-slate-200">{formData.fullName}</span>. We have received your quotation request for <span className="font-bold text-emerald-600">{formData.lookingFor || 'our services'}</span> and will contact you shortly.
+                <h4 className="text-xl font-extrabold text-white">Request Submitted!</h4>
+                <p className="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed max-w-sm mx-auto">
+                  Thank you, <span className="font-bold text-white">{formData.fullName}</span>. We have received your quotation request for <span className="font-bold text-emerald-400">{formData.lookingFor || 'our services'}</span> and will contact you shortly.
                 </p>
                 <button
                   onClick={() => {
@@ -258,7 +262,7 @@ export const CTASection: React.FC<CTASectionProps> = () => {
                       message: ''
                     });
                   }}
-                  className="mt-6 text-xs sm:text-sm font-bold text-emerald-600 dark:text-emerald-400 hover:underline cursor-pointer"
+                  className="mt-6 text-xs sm:text-sm font-bold text-emerald-400 hover:underline cursor-pointer"
                 >
                   Submit another inquiry
                 </button>
