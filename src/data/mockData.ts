@@ -10,12 +10,12 @@ import wasteSegregationImg from '../assets/images/Waste_Segregation.webp';
 import hazardousWasteImg from '../assets/images/Hazardous_Waste_Handling.webp';
 import environmentalManagementImg from '../assets/images/Environmental_Management.webp';
 
-import skipLoaderImg from '../assets/images/skip_loader.png';
-import rcvTruckImg from '../assets/images/rcv_truck.png';
-import hookLoaderImg from '../assets/images/hook_loader.png';
-import roroContainersImg from '../assets/images/roro_containers.png';
-import skipContainersImg from '../assets/images/skip_containers.png';
-import wheelieBinsImg from '../assets/images/wheelie_bins.png';
+import skipLoaderImg from '../assets/images/equipment1_Skip Loader.webp';
+import rcvTruckImg from '../assets/images/equipment2_RCV Truck.png';
+import hookLoaderImg from '../assets/images/equipment3_Hook Loader.png';
+import roroContainersImg from '../assets/images/equipment4_Roll-on Roll-off Containers.png';
+import skipContainersImg from '../assets/images/equipment5_Skip Containers.png';
+import wheelieBinsImg from '../assets/images/equipment6_Wheelie Bins.png';
 
 export const SERVICES: EnvironmentalService[] = [
   {

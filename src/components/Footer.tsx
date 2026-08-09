@@ -1,6 +1,6 @@
 import React from 'react';
 import { Leaf, Phone, Mail, MapPin, ShieldCheck, ArrowUp, Heart } from 'lucide-react';
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/updated_logo.png';
 
 interface FooterProps {
   onOpenRequestModal: () => void;

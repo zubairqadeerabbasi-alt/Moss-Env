@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Leaf, Menu, X, Phone, ArrowRight, ShieldCheck, ChevronRight } from 'lucide-react';
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/updated_logo.png';
 
 interface NavbarProps {
   onOpenRequestModal: (serviceId?: string) => void;

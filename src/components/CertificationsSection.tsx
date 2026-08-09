@@ -2,14 +2,14 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Award, ShieldCheck } from 'lucide-react';
 
-import certIso9001 from '../assets/images/cert_iso_9001.png';
-import certIso14001 from '../assets/images/cert_iso_14001.png';
-import certIso45001 from '../assets/images/cert_iso_45001.png';
-import certIcv from '../assets/images/cert_icv.png';
-import certTadweer from '../assets/images/cert_tadweer.png';
-import certDed from '../assets/images/cert_ded.png';
-import certAddc from '../assets/images/cert_addc.png';
-import certAdssc from '../assets/images/cert_adssc.png';
+import certIso9001 from '../assets/images/certificate_1.png';
+import certIso14001 from '../assets/images/certificate_2.png';
+import certIso45001 from '../assets/images/certificate_3.png';
+import certIcv from '../assets/images/certificate_4.png';
+import certTadweer from '../assets/images/certificate_5.png';
+import certDed from '../assets/images/certificate_6.png';
+import certAddc from '../assets/images/certificate_7.png';
+import certAdssc from '../assets/images/certificate_8.png';
 
 interface Certificate {
   id: string;
