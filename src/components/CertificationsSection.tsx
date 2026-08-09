@@ -102,7 +102,7 @@ export const CertificationsSection: React.FC = () => {
               className="group relative p-6 rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/80 hover:border-emerald-400/50 dark:hover:border-emerald-500/50 shadow-sm hover:shadow-xl hover:shadow-emerald-950/5 transition-all duration-300 flex flex-col items-center justify-between text-center"
             >
               {/* Image Container */}
-              <div className="h-32 w-full flex items-center justify-center bg-white dark:bg-slate-950 p-4 rounded-2xl border border-slate-100 dark:border-slate-800/60 group-hover:scale-[1.02] transition-transform duration-300">
+              <div className="h-32 w-full flex items-center justify-center p-4 group-hover:scale-[1.02] transition-transform duration-300">
                 <img
                   src={cert.image}
                   alt={cert.name}
