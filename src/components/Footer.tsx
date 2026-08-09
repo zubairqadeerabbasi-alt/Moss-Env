@@ -57,11 +57,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenRequestModal, onOpenAuthMo
             <p className="text-sm text-slate-400 leading-relaxed mb-6">
               MOSS Environmental Services & Transport is a UAE-based environmental and waste management company providing reliable waste collection, transportation, disposal, and on-site environmental solutions to clients across Abu Dhabi.
             </p>
-            <div className="flex flex-row flex-nowrap items-center gap-2">
-              <img src={cert1} alt="ISO 9001" className="h-10 sm:h-12 w-auto object-contain" />
-              <img src={cert2} alt="ISO 14001" className="h-10 sm:h-12 w-auto object-contain" />
-              <img src={cert3} alt="ISO 45001" className="h-10 sm:h-12 w-auto object-contain" />
-              <img src={cert4} alt="ICV" className="h-10 sm:h-12 w-auto object-contain" />
+            <div className="flex flex-row flex-wrap items-center gap-4">
+              <img src={cert1} alt="ISO 9001" className="h-16 sm:h-24 w-auto object-contain" />
+              <img src={cert2} alt="ISO 14001" className="h-16 sm:h-24 w-auto object-contain" />
+              <img src={cert3} alt="ISO 45001" className="h-16 sm:h-24 w-auto object-contain" />
+              <img src={cert4} alt="ICV" className="h-16 sm:h-24 w-auto object-contain" />
             </div>
           </div>
 

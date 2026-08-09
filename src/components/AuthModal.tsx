@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Leaf, Lock, Mail, User, ShieldCheck, ArrowRight } from 'lucide-react';
+import { X, Lock, Mail, User, ShieldCheck, ArrowRight } from 'lucide-react';
+import mossIcon from '../assets/images/moss_icon.png';
 
 interface AuthModalProps {
   isOpen: boolean;
@@ -44,8 +45,8 @@ export const AuthModal: React.FC<AuthModalProps> = ({
           {/* Header */}
           <div className="p-6 bg-gradient-to-r from-emerald-900 via-teal-900 to-slate-900 text-white flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="h-10 w-10 rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center">
-                <Leaf className="h-5 w-5 fill-current" />
+              <div className="h-10 w-10 rounded-xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center overflow-hidden">
+                <img src={mossIcon} alt="MOSS" className="h-6 w-6 object-contain" />
               </div>
               <div>
                 <h3 className="text-lg font-bold">MOSS Client Portal</h3>

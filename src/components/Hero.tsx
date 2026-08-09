@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight, Play, Leaf, CheckCircle2, Phone } from 'lucide-react';
+import { ArrowRight, Play, CheckCircle2, Phone } from 'lucide-react';
 import truckImage from '../assets/images/moss_garbage_truck.png';
+import mossIcon from '../assets/images/moss_icon.png';
 
 interface HeroProps {
   onOpenRequestModal: () => void;
@@ -34,7 +35,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRequestModal, onOpenDemoModal 
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold mb-6 backdrop-blur-md"
           >
-            <Leaf className="h-3.5 w-3.5 text-emerald-400 fill-current" />
+            <img src={mossIcon} alt="MOSS" className="h-4 w-4 object-contain" />
             <span className="text-emerald-300 font-semibold">Professional Environmental Solutions</span>
           </motion.div>
 

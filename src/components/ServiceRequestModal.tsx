@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, CheckCircle2, Leaf, ArrowRight, ShieldCheck, Phone } from 'lucide-react';
+import { X, CheckCircle2, ArrowRight, ShieldCheck, Phone } from 'lucide-react';
 import { SERVICES } from '../data/mockData';
+import mossIcon from '../assets/images/moss_icon.png';
 
 interface ServiceRequestModalProps {
   isOpen: boolean;
@@ -49,8 +50,8 @@ export const ServiceRequestModal: React.FC<ServiceRequestModalProps> = ({
           {/* Header */}
           <div className="p-6 bg-gradient-to-r from-emerald-900 via-teal-900 to-slate-900 text-white flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="h-10 w-10 rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center">
-                <Leaf className="h-5 w-5 fill-current" />
+              <div className="h-10 w-10 rounded-xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center overflow-hidden">
+                <img src={mossIcon} alt="MOSS" className="h-6 w-6 object-contain" />
               </div>
               <div>
                 <h3 className="text-lg font-bold">Request an Environmental Service</h3>
