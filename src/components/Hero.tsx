@@ -56,7 +56,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRequestModal, onOpenDemoModal 
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-6 text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed font-normal"
           >
-            MOSS Environment Services delivers end-to-end environmental solutions—from comprehensive waste auditing and coastal mangrove restoration to water purity testing and 24/7 HAZMAT remediation.
+            MOSS Environment Services delivers end-to-end environmental solutions from comprehensive waste auditing and coastal mangrove restoration to water purity testing and 24/7 HAZMAT remediation.
           </motion.p>
 
           {/* Quick Feature Checklist */}
@@ -98,16 +98,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRequestModal, onOpenDemoModal 
               <span>Request a Service</span>
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </button>
-
-            <button
-              onClick={onOpenDemoModal}
-              className="w-full sm:w-auto px-6 py-4 rounded-xl font-semibold text-sm text-slate-200 bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800/80 backdrop-blur-md transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer hover:text-white shadow-sm"
-            >
-              <div className="h-6 w-6 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-400">
-                <Play className="h-3 w-3 fill-current ml-0.5" />
-              </div>
-              <span>Watch Video Overview</span>
-            </button>
           </motion.div>
 
           {/* Emergency Phone Quick Bar */}
@@ -120,8 +110,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRequestModal, onOpenDemoModal 
             <span className="flex items-center gap-2 font-semibold text-emerald-400">
               <Phone className="h-3.5 w-3.5 animate-bounce" /> Emergency Support:
             </span>
-            <a href="tel:8006677" className="text-white hover:text-emerald-400 font-bold underline underline-offset-4 transition-colors">
-              800-MOSS-UAE (+971 2 444 8900)
+            <a href="tel:+97128823595" className="text-white hover:text-emerald-400 font-bold underline underline-offset-4 transition-colors">
+              +971 2 882 3595
             </a>
             <span className="hidden sm:inline text-slate-700">|</span>
             <span className="text-slate-400">Fast 2-hour dispatch for industrial sites</span>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Leaf, Phone, Mail, MapPin, ShieldCheck, ArrowUp, Heart } from 'lucide-react';
-import logo from '../assets/images/updated_logo.png';
+
 
 interface FooterProps {
   onOpenRequestModal: () => void;
@@ -46,82 +46,57 @@ export const Footer: React.FC<FooterProps> = ({ onOpenRequestModal, onOpenAuthMo
       </div>
 
       <div className="max-w-[1600px] mx-auto px-6 lg:px-12 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           
-          {/* Col 1: Brand Info */}
-          <div className="lg:col-span-2 flex flex-col items-start">
-            <a href="#home" className="flex items-center group cursor-pointer focus:outline-none">
-              <div className="flex items-center justify-center transition-all duration-200 group-hover:scale-[1.02]">
-                <img
-                  src={logo}
-                  alt="MOSS Environmental Services & Transport"
-                  className="h-10 md:h-12 w-auto object-contain"
-                />
-              </div>
-            </a>
-
-            <p className="mt-4 text-xs text-slate-400 leading-relaxed max-w-sm">
-              MOSS Environment Services is an accredited provider of commercial waste auditing, coastal mangrove ecosystem restoration, air and water monitoring, and EAD / Tadweer regulatory compliance across Abu Dhabi and the UAE.
+          {/* Col 1: About Us */}
+          <div className="flex flex-col items-start">
+            <h4 className="text-lg font-bold text-white mb-4">About Us</h4>
+            <p className="text-sm text-slate-400 leading-relaxed mb-6">
+              MOSS Environmental Services & Transport is a UAE-based environmental and waste management company providing reliable waste collection, transportation, disposal, and on-site environmental solutions to clients across Abu Dhabi.
             </p>
-
-            <div className="mt-6 flex flex-wrap items-center gap-2">
-              <span className="text-[11px] font-bold px-3 py-1 rounded-full bg-emerald-950 text-emerald-300 border border-emerald-800">
-                EAD Accredited
-              </span>
-              <span className="text-[11px] font-bold px-3 py-1 rounded-full bg-emerald-950 text-emerald-300 border border-emerald-800">
-                Tadweer Approved
-              </span>
-              <span className="text-[11px] font-bold px-3 py-1 rounded-full bg-emerald-950 text-emerald-300 border border-emerald-800">
-                ISO 14001
-              </span>
+            <div className="flex flex-wrap items-center gap-3">
+              <img src="/src/assets/images/certificate_1.png" alt="ISO 9001" className="h-12 w-auto bg-white p-1 rounded-full" />
+              <img src="/src/assets/images/certificate_2.png" alt="ISO 14001" className="h-12 w-auto bg-white p-1 rounded-full" />
+              <img src="/src/assets/images/certificate_3.png" alt="ISO 45001" className="h-12 w-auto bg-white p-1 rounded-full" />
+              <img src="/src/assets/images/certificate_4.png" alt="ICV" className="h-12 w-auto bg-white p-1 rounded-sm" />
             </div>
           </div>
 
-          {/* Col 2: Services */}
+          {/* Col 2: Links */}
           <div>
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider mb-4">
-              Services Offered
-            </h4>
-            <ul className="space-y-2.5 text-xs">
-              <li><a href="#services" className="hover:text-emerald-400 transition-colors">Tadweer Waste Auditing</a></li>
-              <li><a href="#services" className="hover:text-emerald-400 transition-colors">Zero-Landfill Recycling</a></li>
-              <li><a href="#services" className="hover:text-emerald-400 transition-colors">Mangrove & Ecosystem Restoration</a></li>
-              <li><a href="#services" className="hover:text-emerald-400 transition-colors">EAD Water & Air Quality Testing</a></li>
-              <li><a href="#services" className="hover:text-emerald-400 transition-colors">Estidama Solar Microgrids</a></li>
-              <li><a href="#services" className="hover:text-emerald-400 transition-colors">HAZMAT Emergency Response</a></li>
+            <h4 className="text-lg font-bold text-white mb-4">Links</h4>
+            <ul className="space-y-3 text-sm">
+              <li><a href="#about" className="hover:text-emerald-400 transition-colors flex items-center gap-2"><span className="text-emerald-500">→</span> About Us</a></li>
+              <li><a href="#services" className="hover:text-emerald-400 transition-colors flex items-center gap-2"><span className="text-emerald-500">→</span> Our Services</a></li>
+              <li><a href="#gallery" className="hover:text-emerald-400 transition-colors flex items-center gap-2"><span className="text-emerald-500">→</span> Gallery</a></li>
+              <li><a href="#contact" className="hover:text-emerald-400 transition-colors flex items-center gap-2"><span className="text-emerald-500">→</span> Contact</a></li>
             </ul>
           </div>
 
-          {/* Col 3: Company */}
+          {/* Col 3: Our Services */}
           <div>
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider mb-4">
-              Company Overview
-            </h4>
-            <ul className="space-y-2.5 text-xs">
-              <li><a href="#why-us" className="hover:text-emerald-400 transition-colors">Why Choose MOSS</a></li>
-              <li><a href="#projects" className="hover:text-emerald-400 transition-colors">Case Studies & Projects</a></li>
-              <li><a href="#faq" className="hover:text-emerald-400 transition-colors">Frequently Asked Questions</a></li>
-              <li><button onClick={() => onOpenAuthModal('login')} className="hover:text-emerald-400 transition-colors cursor-pointer text-left">Client Portal Login</button></li>
+            <h4 className="text-lg font-bold text-white mb-4">Our Services</h4>
+            <ul className="space-y-3 text-sm">
+              <li><a href="#services" className="hover:text-emerald-400 transition-colors flex items-center gap-2"><span className="text-emerald-500">→</span> Construction Waste Management</a></li>
+              <li><a href="#services" className="hover:text-emerald-400 transition-colors flex items-center gap-2"><span className="text-emerald-500">→</span> Commercial and Industrial Waste Management</a></li>
+              <li><a href="#services" className="hover:text-emerald-400 transition-colors flex items-center gap-2"><span className="text-emerald-500">→</span> Material Recovery and Recycling</a></li>
+              <li><a href="#services" className="hover:text-emerald-400 transition-colors flex items-center gap-2"><span className="text-emerald-500">→</span> Hazardous Waste Management</a></li>
             </ul>
           </div>
 
-          {/* Col 4: Contact HQ */}
+          {/* Col 4: Contact Us */}
           <div>
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider mb-4">
-              Abu Dhabi HQ & Contact
-            </h4>
-            <ul className="space-y-3 text-xs text-slate-400">
+            <h4 className="text-lg font-bold text-white mb-4">Contact Us</h4>
+            <ul className="space-y-4 text-sm text-slate-400">
               <li className="flex items-start gap-2">
-                <MapPin className="h-4 w-4 text-emerald-400 flex-shrink-0 mt-0.5" />
-                <span>Sheikh Zayed Bin Sultan Street, Al Danah<br />Abu Dhabi, United Arab Emirates</span>
+                <span>P.O. Box 8257, Plot No: 63<br />Mussaffah Ind Area, M-33,<br />Abu Dhabi - UAE</span>
               </li>
-              <li className="flex items-center gap-2">
-                <Phone className="h-4 w-4 text-emerald-400 flex-shrink-0" />
-                <a href="tel:8006677" className="hover:text-white">800-MOSS-UAE (+971 2 444 8900)</a>
-              </li>
-              <li className="flex items-center gap-2">
-                <Mail className="h-4 w-4 text-emerald-400 flex-shrink-0" />
-                <a href="mailto:abudhabi@mossenvironment.ae" className="hover:text-white">abudhabi@mossenvironment.ae</a>
+              <li className="flex items-start gap-3 mt-4">
+                <Phone className="h-6 w-6 text-emerald-400 flex-shrink-0 mt-1" />
+                <div className="flex flex-col gap-1">
+                  <a href="mailto:sales@mossenvironment.ae" className="text-white hover:text-emerald-400 font-bold">sales@mossenvironment.ae</a>
+                  <a href="tel:+971509932288" className="text-white font-bold">+971 50 9932 288</a>
+                </div>
               </li>
             </ul>
           </div>
