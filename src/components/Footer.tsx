@@ -1,6 +1,9 @@
 import React from 'react';
 import { Leaf, Phone, Mail, MapPin, ShieldCheck, ArrowUp, Heart } from 'lucide-react';
-
+import cert1 from '../assets/images/certificate_1.png';
+import cert2 from '../assets/images/certificate_2.png';
+import cert3 from '../assets/images/certificate_3.png';
+import cert4 from '../assets/images/certificate_4.png';
 
 interface FooterProps {
   onOpenRequestModal: () => void;
@@ -54,11 +57,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenRequestModal, onOpenAuthMo
             <p className="text-sm text-slate-400 leading-relaxed mb-6">
               MOSS Environmental Services & Transport is a UAE-based environmental and waste management company providing reliable waste collection, transportation, disposal, and on-site environmental solutions to clients across Abu Dhabi.
             </p>
-            <div className="flex flex-wrap items-center gap-3">
-              <img src="/src/assets/images/certificate_1.png" alt="ISO 9001" className="h-12 w-auto bg-white p-1 rounded-full" />
-              <img src="/src/assets/images/certificate_2.png" alt="ISO 14001" className="h-12 w-auto bg-white p-1 rounded-full" />
-              <img src="/src/assets/images/certificate_3.png" alt="ISO 45001" className="h-12 w-auto bg-white p-1 rounded-full" />
-              <img src="/src/assets/images/certificate_4.png" alt="ICV" className="h-12 w-auto bg-white p-1 rounded-sm" />
+            <div className="flex flex-row flex-nowrap items-center gap-2">
+              <img src={cert1} alt="ISO 9001" className="h-10 sm:h-12 w-auto bg-white p-1 rounded-full object-contain" />
+              <img src={cert2} alt="ISO 14001" className="h-10 sm:h-12 w-auto bg-white p-1 rounded-full object-contain" />
+              <img src={cert3} alt="ISO 45001" className="h-10 sm:h-12 w-auto bg-white p-1 rounded-full object-contain" />
+              <img src={cert4} alt="ICV" className="h-10 sm:h-12 w-auto bg-white p-1 rounded-sm object-contain" />
             </div>
           </div>
 
