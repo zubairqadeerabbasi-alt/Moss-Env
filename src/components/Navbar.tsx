@@ -22,6 +22,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRequestModal, onOpenAuthMo
 
   const navLinks = [
     { label: 'Home', href: '#home' },
+    { label: 'About', href: '#about' },
     { label: 'Services', href: '#services' },
     { label: 'Equipments', href: '#equipments' },
     { label: 'FAQ', href: '#faq' },

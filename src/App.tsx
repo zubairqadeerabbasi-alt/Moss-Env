@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { AboutSection } from './components/AboutSection';
 import { ServicesSection } from './components/ServicesSection';
 import { EquipmentsSection } from './components/EquipmentsSection';
 import { CertificationsSection } from './components/CertificationsSection';
@@ -51,6 +52,9 @@ export default function App() {
         onOpenRequestModal={() => handleOpenRequestModal()}
         onOpenDemoModal={() => setVideoModalOpen(true)}
       />
+
+      {/* About Section */}
+      <AboutSection />
 
       {/* Environmental Services Section */}
       <ServicesSection
