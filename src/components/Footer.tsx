@@ -3,7 +3,7 @@ import { Leaf, Phone, Mail, MapPin, ShieldCheck, ArrowUp, Heart } from 'lucide-r
 import cert1 from '../assets/images/certificate_1.png';
 import cert2 from '../assets/images/certificate_2.png';
 import cert3 from '../assets/images/certificate_3.png';
-import cert4 from '../assets/images/certificate_4.png';
+import cert4 from '../assets/images/cert_icv.png';
 
 interface FooterProps {
   onOpenRequestModal: () => void;
