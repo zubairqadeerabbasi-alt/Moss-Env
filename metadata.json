@@ -1,0 +1,8 @@
+{
+  "name": "Remix MOSS Environment Services",
+  "description": "Abu Dhabi \u0026 UAE\u0027s premier environmental \u0026 sustainability solutions platform providing Tadweer waste management, mangrove ecological restoration, EAD air \u0026 water auditing, and Estidama clean energy consulting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
