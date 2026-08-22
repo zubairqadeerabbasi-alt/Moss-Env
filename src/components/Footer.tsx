@@ -61,7 +61,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenRequestModal, onOpenAuthMo
               <img src={cert1} alt="ISO 9001" className="h-16 sm:h-24 w-auto object-contain flex-shrink-0 -mr-6 sm:-mr-12" style={{ clipPath: 'polygon(0 0, 96% 0, 96% 96%, 0 96%)' }} />
               <img src={cert2} alt="ISO 14001" className="h-16 sm:h-24 w-auto object-contain flex-shrink-0 -mr-6 sm:-mr-12" style={{ clipPath: 'polygon(0 0, 96% 0, 96% 96%, 0 96%)' }} />
               <img src={cert3} alt="ISO 45001" className="h-16 sm:h-24 w-auto object-contain flex-shrink-0 -mr-6 sm:-mr-12" style={{ clipPath: 'polygon(0 0, 96% 0, 96% 96%, 0 96%)' }} />
-              <img src={cert4} alt="ICV" className="h-16 sm:h-24 w-auto object-contain flex-shrink-0" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 96%, 0 96%)' }} />
+              <img src={cert4} alt="ICV" className="h-16 sm:h-24 w-auto object-contain flex-shrink-0" style={{ clipPath: 'polygon(10% 0, 90% 0, 90% 92%, 10% 92%)' }} />
             </div>
           </div>
 
