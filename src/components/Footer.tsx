@@ -57,11 +57,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenRequestModal, onOpenAuthMo
             <p className="text-sm text-slate-400 leading-relaxed mb-6">
               MOSS Environmental Services & Transport is a UAE-based environmental and waste management company providing reliable waste collection, transportation, disposal, and on-site environmental solutions to clients across Abu Dhabi.
             </p>
-            <div className="flex flex-row flex-wrap items-center gap-4">
-              <img src={cert1} alt="ISO 9001" className="h-16 sm:h-24 w-auto object-contain" />
-              <img src={cert2} alt="ISO 14001" className="h-16 sm:h-24 w-auto object-contain" />
-              <img src={cert3} alt="ISO 45001" className="h-16 sm:h-24 w-auto object-contain" />
-              <img src={cert4} alt="ICV" className="h-16 sm:h-24 w-auto object-contain" />
+            <div className="flex flex-row flex-nowrap items-center gap-[0px] mt-4 w-full -ml-4 sm:-ml-8">
+              <img src={cert1} alt="ISO 9001" className="h-16 sm:h-24 w-auto object-contain flex-shrink-0 -mr-6 sm:-mr-12" style={{ clipPath: 'polygon(0 0, 96% 0, 96% 96%, 0 96%)' }} />
+              <img src={cert2} alt="ISO 14001" className="h-16 sm:h-24 w-auto object-contain flex-shrink-0 -mr-6 sm:-mr-12" style={{ clipPath: 'polygon(0 0, 96% 0, 96% 96%, 0 96%)' }} />
+              <img src={cert3} alt="ISO 45001" className="h-16 sm:h-24 w-auto object-contain flex-shrink-0 -mr-6 sm:-mr-12" style={{ clipPath: 'polygon(0 0, 96% 0, 96% 96%, 0 96%)' }} />
+              <img src={cert4} alt="ICV" className="h-16 sm:h-24 w-auto object-contain flex-shrink-0" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 96%, 0 96%)' }} />
             </div>
           </div>
 
